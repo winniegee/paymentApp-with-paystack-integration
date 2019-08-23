@@ -1,0 +1,9 @@
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\bin\Release\netcoreapp2.1\Domain.Entities.deps.json
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\bin\Release\netcoreapp2.1\Domain.Entities.dll
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\bin\Release\netcoreapp2.1\Domain.Entities.pdb
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.csprojAssemblyReference.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.AssemblyInfoInputs.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.AssemblyInfo.cs
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.dll
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Entities\obj\Release\netcoreapp2.1\Domain.Entities.pdb

@@ -1,0 +1,9 @@
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\bin\Release\netcoreapp2.1\Domain.Interface.deps.json
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\bin\Release\netcoreapp2.1\Domain.Interface.dll
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\bin\Release\netcoreapp2.1\Domain.Interface.pdb
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.csprojAssemblyReference.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.csproj.CoreCompileInputs.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.AssemblyInfoInputs.cache
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.AssemblyInfo.cs
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.dll
+C:\Users\winifred\source\repos\Suppliers Payment\Domain.Interface\obj\Release\netcoreapp2.1\Domain.Interface.pdb

@@ -1,0 +1,35 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-6  col-md-offset-3" id="all">
+            <h2 style="color:white"><strong>Welcome! Make payment with ease</strong></h2>
+            <hr class="colorgraph">
+            <hr />
+            <form #regform="ngForm" novalidate>
+                <div *ngIf="errorMsg" class="alert alert-warning">{{errorMsg}}</div>
+                <div class="form-group" id="name" style="color:white">
+                    <label for="name">Preferred Name</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="model.name" #name="ngModel" required />
+                    <div class="text-danger" *ngIf="name.touched&&name.invalid && name.errors.required">Name is required!</div>
+                </div>
+                <div class="form-group" id="accountNumber" style="color:white">
+                    <label for="accountNumber">Account Number</label>
+                    <input readonly type="text" class="form-control" name="accountNumber" [ngModel]="model.account_number"  #accountNumber="ngModel" required />
+                    <div class="text-danger" *ngIf="accountNumber.touched&&accountNumber.invalid && accountNumber.errors.required">Account Number is required!</div>
+                </div>
+                <div class="form-group" id="bankcode" style="color:white">
+                    <label for="bankcode">BankCode</label>
+                    <input readonly type="text" class="form-control" name="bankcode" [ngModel]="model.bank_code" #bankcode="ngModel" required />
+                    <div class="text-danger" *ngIf="bankcode.touched && bankcode.invalid && bankcode.errors.required">BankCode is required!</div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Register" [disabled]="regform.invalid" (click)="onCreate()" /> &nbsp;&nbsp;
+                    <a routerLink="/" class="btn btn-danger">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+

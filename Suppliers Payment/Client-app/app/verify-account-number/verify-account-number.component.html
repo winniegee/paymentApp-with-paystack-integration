@@ -1,0 +1,48 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-6  col-md-offset-3" id="all">
+            <h2><strong>Welcome! Make payment with ease</strong></h2>
+            <hr class="colorgraph">
+            <hr />
+            <form #regform="ngForm" novalidate>
+                <div *ngIf="errorMsg" class="alert alert-warning">{{errorMsg}}</div>
+                <p>Check for Bank Codes</p>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width:100px!important;color:white">Bank</th>
+                                <th scope="col" style="width:100px!important;color:white">Bank Code</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let value of banks|paginate:config" style="padding-left:20px!important;">
+                                <th scope="row" style="width:100px!important;color:white">{{value.name}}</th>
+                                <th scope="row" style="width:100px!important;color:white">{{value.code}}</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+                </div>
+                <div class="form-group" id="accountNumber">
+                    <label for="accountNumber">Account Number</label>
+                    <input type="text" class="form-control" name="accountNumber" [(ngModel)]="model.account_number" #accountNumber="ngModel" required />
+                    <div class="text-danger" *ngIf="accountNumber.touched&&accountNumber.invalid && accountNumber.errors.required">Account Number is required!</div>
+                </div>
+                <div class="form-group" id="bankcode">
+                    <label for="bankcode">Bank code</label>
+                    <input type="text" class="form-control" name="bankcode" [(ngModel)]="model.bank_code" #bankcode="ngModel" required />
+                    <div class="text-danger" *ngIf="bankcode.touched && bankcode.invalid && bankcode.errors.required">BankCode is required!</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Register" [disabled]="regform.invalid" (click)="onCreate()" /> &nbsp;&nbsp;
+                    <a routerLink="/" class="btn btn-danger">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+

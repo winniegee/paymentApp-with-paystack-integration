@@ -1,0 +1,32 @@
+
+
+.navbar {
+    background-color: transparent !important;
+    text-align: center;
+    overflow:hidden;
+    width: 100vw;
+    padding: 0;
+}
+
+    .navbar a {
+        float:left!important;
+        text-align:center;
+        padding:14px 16px;
+        color:aqua !important;
+        font: bold;
+        font-size:20px;
+        
+    }
+body {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../content/photo-1556742059-47b93231f536.jpg') fixed;
+    background-position: inherit;
+    overflow: hidden;
+}
+.navbar a:hover {
+    background-color: aquamarine;
+    color: cornflowerblue;
+}
+    .navbar a:active {
+        background-color: aquamarine;
+        color: blue;
+    }

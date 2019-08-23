@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+    <UserSecretsId>8a3aba67-4d21-46cd-9508-49abd47c1190</UserSecretsId>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="config.json" />
+    <Content Remove="package-lock.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Client-app\app\Shared\CreateTransferRecipientModel.ts" />
+    <None Remove="Client-app\app\Shared\PaystackServices.ts" />
+    <None Remove="Client-app\app\Shared\ResolveBankAccountModel.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Client-app\app\app.component.css" />
+    <None Include="Client-app\app\app.component.html" />
+    <None Include="Client-app\app\app.component.spec.ts" />
+    <None Include="Client-app\app\app.component.ts" />
+    <None Include="Client-app\app\app.module.ts" />
+    <None Include="Client-app\assets\.gitkeep" />
+    <None Include="Client-app\browserslist" />
+    <None Include="Client-app\environments\environment.prod.ts" />
+    <None Include="Client-app\environments\environment.ts" />
+    <None Include="Client-app\favicon.ico" />
+    <None Include="Client-app\index.html" />
+    <None Include="Client-app\karma.conf.js" />
+    <None Include="Client-app\main.ts" />
+    <None Include="Client-app\polyfills.ts" />
+    <None Include="Client-app\styles.css" />
+    <None Include="Client-app\test.ts" />
+    <None Include="config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructuree.Data\Infrastructuree.Data.csproj" />
+    <ProjectReference Include="..\Interfaces\Providers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Client-app\app\Shared\CreateTransferRecipientModel.ts" />
+    <TypeScriptCompile Include="Client-app\app\Shared\ResolveBankAccountModel.ts" />
+    <TypeScriptCompile Include="Client-app\app\Shared\PaystackServices.ts" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {
+    "BakeryContext": "Server=(localdb)\\MSSQLLocalDB;Initial Catalog=BakeryContext;Integrated Security=true;"
+  }
+}
+ 

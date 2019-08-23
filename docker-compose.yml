@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  suppliers_payment_web:
+    image: suppliers_payment_web
+    build:
+      context: .
+      dockerfile: Suppliers Payment\Dockerfile

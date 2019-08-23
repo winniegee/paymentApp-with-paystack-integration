@@ -1,0 +1,10 @@
+<h2 style="color:white"><strong>SUPPLIERS LIST</strong></h2>
+<div *ngIf="errorMsg" class="alert alert-warning">{{errorMsg}}</div>
+<div class="row">
+    <div class="product-info col-md-4 col-sm-4 col-xs-4" *ngFor="let value of suppliers" style="color:black;">
+        <div class="thumbnail">
+            <h6 style="color:white"><strong> Name: </strong>{{value.name}}</h6>
+            <h6 style="color:white"><strong>Account Number: </strong>&#8358;{{value.AccountNumber}}</h6>
+            <h6 style="color:white"><strong>Bank Name: </strong>{{value.BankName}}</h6>
+            <button class="btn btn-success" (click)="pay(value.recipientCode)">Pay this supplier</button>
+</div></div></div>
